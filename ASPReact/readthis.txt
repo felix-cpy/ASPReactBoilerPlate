@@ -1,0 +1,18 @@
+﻿https://dev.to/dance2die/setting-up-a-react-environment-for-aspnet-mvc-44la
+-- right click on project under the solution,  run  npm init (creates package.json)
+-- install webpack, command
+npm install --save-dev webpack webpack-notifier browser-sync-webpack-plugin webpack-cli
+
+-- install react    (npm install react@16.14.0 react-dom@16.14.0)
+-- installl babel: command
+npm install --save-dev @babel/cli @babel/core @babel/plugin-proposal-class-properties @babel/preset-env @babel/preset-react babel-loader browser-sync browser-sync-webpack-plugin webpack webpack-cli webpack-notifier
+
+--add babel.config.json
+--add webpack.config.js
+--add 2 lines under script in package.json
+
+    "dev": "webpack --mode development --watch",
+    "build": "webpack"
+
+--create React and React>src
+--add react code to src
